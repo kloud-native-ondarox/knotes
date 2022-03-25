@@ -51,7 +51,7 @@ theme:
     text: Roboto
     code: Roboto Mono
 
-  favicon: assets/favicon.png
+  favicon: images/favicon.png
   icon:
     logo: fontawesome/solid/whiskey-glass
 

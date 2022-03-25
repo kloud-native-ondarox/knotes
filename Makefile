@@ -4,4 +4,4 @@ deploy-local:
 
 deploy-github:
 	cd ../kloud-native-ondarox.github.io/
-	mkdocs gh-deploy --config-file ../knotes/mkdocs.yml
+	mkdocs gh-deploy --config-file ../knotes/mkdocs.yml --force

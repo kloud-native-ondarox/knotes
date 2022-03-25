@@ -1,6 +1,8 @@
 mkdocs==1.2.3
 mkdocs-material==8.2.7
 mkdocs-material-extensions==1.0.3
+mkdocs-minify-plugin
+mkdocs-redirects
 click==3.3
 ghp-import==1.0
 importlib-metadata==3.10

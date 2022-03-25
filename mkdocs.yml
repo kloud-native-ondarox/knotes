@@ -1,8 +1,10 @@
-site_name: Kloud-Native-Knotes
+site_name: Kloud Native Knotes on Random Stuff
 site_url: https://knotes.kloud-native.ondarox.dev/
 site_description: Personal Collection of Random Notes.
 site_author: Jesse Gonzalez
 
+# Repository
+repo_name: kloud-native-ondarox/knotes
 repo_url: https://github.com/kloud-native-ondarox/knotes
 edit_uri: ""
 
@@ -13,16 +15,74 @@ theme:
   hljs_languages:
       - yaml
 
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - content.code.annotate
+    # - content.tabs.link
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
 extra:
   homepage: https://knotes.kloud-native.ondarox.dev/
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
 nav:
-  - Home: index.md
-  - Architecture TLDR: 
-    - Kubernetes Best Practices:
-        - Business Continuity: architecture-tldr/kubernetes-best-practices/business-continuity.md
-  - Troubleshooting Stuff: 
-    - Kubernetes:
+  - home: index.md
+  - architecture tldr: 
+    - kubernetes best practices:
+        - references: architecture-tldr/kubernetes-best-practices/references.md
+  - troubleshooting stuff: 
+    - kubernetes:
         - etcd: troubleshooting/kubernetes/etcd.md
-  - Walkthroughs: 
-    - Nutanix Karbon:
-        - Airgap Deployments: walkthroughs/nutanix/karbon/airgap.md
+        - references: architecture-tldr/kubernetes-best-practices/references.md
+  - random walkthroughs: 
+    - nutanix karbon:
+        - airgap deployments: walkthroughs/nutanix/karbon/airgap.md
+
+# Copyright
+copyright: Copyright &copy; 2016 - 2022 Jesse Gonzalez

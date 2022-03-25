@@ -1,17 +1,25 @@
 site_name: Kloud-Native-Knotes
-site_url: https://www.knotes.kloud-native.ondarox.dev/
+site_url: https://knotes.kloud-native.ondarox.dev/
 site_description: Personal Collection of Random Notes.
 site_author: Jesse Gonzalez
 
 repo_url: https://github.com/kloud-native-ondarox/knotes
 edit_uri: ""
 
-theme: readthedocs
+theme:
+  name: material
+  highlightjs: true
+  nav_style: dark
+  hljs_languages:
+      - yaml
 
 extra:
   homepage: https://knotes.kloud-native.ondarox.dev/
 nav:
   - Home: index.md
+  - Architecture TLDR: 
+    - Kubernetes Best Practices:
+        - Business Continuity: architecture-tldr/kubernetes-best-practices/business-continuity.md
   - Troubleshooting Stuff: 
     - Kubernetes:
         - etcd: troubleshooting/kubernetes/etcd.md

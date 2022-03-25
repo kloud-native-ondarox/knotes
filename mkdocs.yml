@@ -1,4 +1,4 @@
-site_name: Just Another TLDR on Random Kloud Native Stuff
+site_name: Serving Random Kloud Native Stuff OnDaRox
 site_url: https://knotes.kloud-native.ondarox.dev/
 site_description: Personal Collection of Random Notes.
 site_author: Jesse Gonzalez
@@ -51,6 +51,10 @@ theme:
     text: Roboto
     code: Roboto Mono
 
+  favicon: assets/favicon.ico
+  icon:
+    logo: fontawesome/solid/whiskey-glass
+
 extra:
   homepage: https://knotes.kloud-native.ondarox.dev/
 
@@ -64,7 +68,11 @@ markdown_extensions:
   - meta
   - md_in_html
   - toc:
-      permalink: true
+      permalink: true  
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
 # Plugins
 plugins:
   - search

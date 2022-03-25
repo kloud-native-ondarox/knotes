@@ -1,6 +1,20 @@
 site_name: Kloud-Native-Knotes
-site_url: https://example.com/
+site_url: https://www.knotes.kloud-native.ondarox.dev/
+site_description: Personal Collection of Random Notes.
+site_author: Jesse Gonzalez
+
+repo_url: https://github.com/kloud-native-ondarox/knotes
+edit_uri: ""
+
+theme: readthedocs
+
+extra:
+  homepage: https://knotes.kloud-native.ondarox.dev/
 nav:
   - Home: index.md
-  - About: about.md
-theme: readthedocs
+  - Troubleshooting Stuff: 
+    - Kubernetes:
+        - etcd: troubleshooting/kubernetes/etcd.md
+  - Walkthroughs: 
+    - Nutanix Karbon:
+        - Airgap Deployments: walkthroughs/nutanix/karbon/airgap.md

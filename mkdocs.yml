@@ -86,6 +86,7 @@ nav:
         - references: architecture-tldr/kubernetes-best-practices/references.md
   - troubleshooting stuff: 
     - kubernetes:
+        - kubernetes: troubleshooting/kubernetes/kubernetes.md
         - etcd: troubleshooting/kubernetes/etcd.md
         - references: architecture-tldr/kubernetes-best-practices/references.md
   - random walkthroughs: 

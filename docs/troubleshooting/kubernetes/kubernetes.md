@@ -1,40 +1,4 @@
-<!-- TOC -->
-
-- [Troubleshooting](#troubleshooting)
-  - [Connect to API server without KUBECTL Proxy](#connect-to-api-server-without-kubectl-proxy)
-  - [Accessing the API from a Pod](#accessing-the-api-from-a-pod)
-  - [Querying Stuff](#querying-stuff)
-  - [Labels and Selectors](#labels-and-selectors)
-  - [port forwarding](#port-forwarding)
-  - [logging](#logging)
-  - [Events](#events)
-  - [Resource Monitoring](#resource-monitoring)
-  - [Events & Logs](#events--logs)
-  - [Using Jsonpath](#using-jsonpath)
-  - [Troubleshooting Node Failures](#troubleshooting-node-failures)
-    - [Break Node](#break-node)
-  - [Kubernetes Security](#kubernetes-security)
-  - [Investigating the PKI setup on the Control Plane Node](#investigating-the-pki-setup-on-the-control-plane-node)
-  - [Kubernetes - Create New User Certificate](#kubernetes---create-new-user-certificate)
-    - [- Create a RSA private key](#--create-a-rsa-private-key)
-    - [- Generate a CSR](#--generate-a-csr)
-    - [B/2B - ALTERNATIVE - Create a new private key AND Certificate Signing Request](#b2b---alternative---create-a-new-private-key-and-certificate-signing-request)
-    - [- Submit the CertificateSigningRequest to the API Server - K8s 1.19+](#--submit-the-certificatesigningrequest-to-the-api-server---k8s-119)
-    - [- Submit the CertificateSigningRequest to the API Server - K8s 1.18](#--submit-the-certificatesigningrequest-to-the-api-server---k8s-118)
-    - [- Approve the CSR](#--approve-the-csr)
-    - [- Retrieve the certificate from the CSR object, it's base64 encoded](#--retrieve-the-certificate-from-the-csr-object-its-base64-encoded)
-    - [COMPLETE ALTERNATIVE A - Create a Self-signed Certificate](#complete-alternative-a---create-a-self-signed-certificate)
-    - [MISC ALTERNATIVE B](#misc-alternative-b)
-      - [Create a CSR from existing certificate and private key](#create-a-csr-from-existing-certificate-and-private-key)
-      - [Generate a CSR for multi-domain SAN certificate by supplying an openssl config file:](#generate-a-csr-for-multi-domain-san-certificate-by-supplying-an-openssl-config-file)
-      - [Create X.509 certificates](#create-x509-certificates)
-    - [Troubleshooting Certificate Issues](#troubleshooting-certificate-issues)
-  - [Capacity Planning](#capacity-planning)
-
-<!-- /TOC -->
-
-
-# Troubleshooting
+# General Kubernetes Troubleshooting
 
 ## Connect to API server without KUBECTL Proxy
 

@@ -81,17 +81,17 @@ plugins:
 
 nav:
   - home: index.md
-  - architecture tldr: 
+  - architecture tldr:
     - kubernetes best practices:
         - references: architecture-tldr/kubernetes-best-practices/references.md
-  - troubleshooting stuff: 
-    - kubernetes:
-        - kubernetes: troubleshooting/kubernetes/kubernetes.md
-        - etcd: troubleshooting/kubernetes/etcd.md
-        - references: architecture-tldr/kubernetes-best-practices/references.md
-  - random walkthroughs: 
-    - nutanix karbon:
-        - airgap deployments: walkthroughs/nutanix/karbon/airgap.md
+  # - troubleshooting stuff:
+  #   - kubernetes:
+  #       - kubernetes: troubleshooting/kubernetes/kubernetes.md
+  #       - etcd: troubleshooting/kubernetes/etcd.md
+  #       - references: troubleshooting/kubernetes-best-practices/references.md
+  # - random walkthroughs:
+  #   - nutanix karbon:
+  #       - airgap deployments: walkthroughs/nutanix/karbon/airgap.md
 
 # Copyright
 copyright: Copyright &copy; 2016 - 2022 Jesse Gonzalez

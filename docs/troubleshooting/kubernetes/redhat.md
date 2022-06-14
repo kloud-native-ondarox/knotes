@@ -50,6 +50,12 @@ $ curl -X POST https://api.openshift.com/api/accounts_mgmt/v1/access_token --hea
 }
 ```
 
+or directly  ` | base64 | pbcopy` and `pbpaste` into cmd line
+
 ## Changing the Global Pull Secret 
 
 [How to change the global pull secret in OCP 4](https://access.redhat.com/solutions/4902871)
+
+`oc set data secret/pull-secret -n openshift-config --from-file=.dockerconfigjson=.local/rh-pullsecret.json`
+
+`oc get secret pull-secret -n openshift-config --template='{{index .data ".dockerconfigjson" | base64decode}}'`

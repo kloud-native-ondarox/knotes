@@ -23,7 +23,7 @@ theme:
     # - header.autohide
     # - navigation.expand
     - navigation.indexes
-    # - navigation.instant
+    - navigation.instant
     - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
@@ -94,4 +94,4 @@ nav:
   #       - airgap deployments: walkthroughs/nutanix/karbon/airgap.md
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2022 Jesse Gonzalez
+copyright: Copyright &copy; 2022 Jesse Gonzalez
